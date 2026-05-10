@@ -1,0 +1,329 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#2563eb;
+overflow-x:hidden;
+}
+
+.hidden{
+display:none;
+}
+
+.screen{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px;
+}
+
+/* LANDING */
+
+.landing-container{
+width:100%;
+max-width:1200px;
+color:white;
+text-align:center;
+}
+
+.landing-left h1{
+font-size:80px;
+}
+
+.landing-left h2{
+font-size:35px;
+margin:20px 0;
+}
+
+.landing-left p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+/* CARDS */
+
+.card,
+.dashboard-card{
+background:white;
+padding:40px;
+border-radius:25px;
+width:100%;
+max-width:500px;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.logo{
+font-size:45px;
+text-align:center;
+color:#2563eb;
+}
+
+.subtitle{
+text-align:center;
+color:gray;
+margin-bottom:20px;
+}
+
+/* INPUT */
+
+input{
+width:100%;
+padding:15px;
+margin-top:15px;
+border-radius:15px;
+border:1px solid #d1d5db;
+font-size:15px;
+outline:none;
+}
+
+input:focus{
+border-color:#2563eb;
+}
+
+/* BUTTON */
+
+button{
+width:100%;
+padding:15px;
+margin-top:15px;
+border:none;
+border-radius:15px;
+background:#2563eb;
+color:white;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#1d4ed8;
+}
+
+/* TERMS */
+
+.terms-box{
+background:#eff6ff;
+padding:20px;
+border-radius:15px;
+margin-top:20px;
+line-height:1.8;
+}
+
+.check-container{
+display:flex;
+gap:10px;
+margin-top:20px;
+align-items:center;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+position:fixed;
+left:20px;
+top:20px;
+bottom:20px;
+width:280px;
+background:white;
+border-radius:30px;
+padding:30px 20px;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+z-index:999;
+}
+
+.sidebar-top{
+display:flex;
+flex-direction:column;
+gap:40px;
+}
+
+.side-logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo-icon{
+width:60px;
+height:60px;
+background:#2563eb;
+border-radius:20px;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+color:white;
+}
+
+.logo-info h1{
+font-size:38px;
+}
+
+.logo-info span{
+color:#2563eb;
+}
+
+.logo-info p{
+color:gray;
+font-size:14px;
+}
+
+.side-menu{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.side-btn{
+padding:18px;
+border:none;
+border-radius:18px;
+background:transparent;
+font-size:17px;
+font-weight:600;
+text-align:left;
+cursor:pointer;
+transition:0.3s;
+color:#374151;
+}
+
+.side-btn:hover{
+background:#eff6ff;
+color:#2563eb;
+}
+
+.side-profile{
+text-align:center;
+}
+
+.side-profile img{
+width:90px;
+height:90px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid #2563eb;
+}
+
+.side-profile h3{
+margin-top:10px;
+}
+
+/* MAIN */
+
+.main-content{
+margin-left:330px;
+width:100%;
+padding:20px;
+}
+
+/* ANALYTICS */
+
+.analytics-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+margin-top:20px;
+}
+
+.analytics-item{
+background:#eff6ff;
+padding:20px;
+border-radius:15px;
+text-align:center;
+}
+
+.analytics-item span{
+display:block;
+color:gray;
+margin-bottom:5px;
+}
+
+/* MODULES */
+
+.module-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+margin-top:20px;
+}
+
+/* GAME */
+
+.question-box{
+background:#eff6ff;
+padding:40px;
+border-radius:20px;
+text-align:center;
+margin:20px 0;
+}
+
+.question-box h1{
+font-size:50px;
+color:#2563eb;
+}
+
+.dashboard-profile{
+width:80px;
+height:80px;
+border-radius:50%;
+object-fit:cover;
+border:3px solid #2563eb;
+display:block;
+margin:20px auto;
+}
+
+/* PROFILE */
+
+.profile-image{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+display:block;
+margin:20px auto;
+border:4px solid #2563eb;
+}
+
+/* PROGRESS */
+
+.progress-item{
+background:#eff6ff;
+padding:20px;
+border-radius:15px;
+margin-top:15px;
+display:flex;
+justify-content:space-between;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.sidebar{
+position:relative;
+width:100%;
+left:0;
+top:0;
+bottom:0;
+border-radius:0;
+}
+
+.main-content{
+margin-left:0;
+}
+
+.analytics-grid,
+.module-grid{
+grid-template-columns:1fr;
+}
+
+}
